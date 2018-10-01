@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TableLayout
+        android:id="@+id/board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
@@ -100,5 +101,25 @@
         </TableRow>
     </TableLayout>
 
+    <TextView
+        android:id="@+id/game_state_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="@string/x_turn"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/board"
+        android:layout_below="@id/board"
+        android:text="@string/new_game"
+        android:onClick="pressedNewGame"/>
 
 </RelativeLayout>

@@ -20,11 +20,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void pressedSquare(View view){
+    public void pressedSquare(View view) {
         String tagAsStr = view.getTag().toString();
         int tagAsInt = Integer.parseInt(tagAsStr);
         Log.d("TTT", "You pressed index " + tagAsInt);
 
         Toast.makeText(this, "You pressed index " + tagAsInt, Toast.LENGTH_SHORT).show();
     }
+
+    public void pressedNewGame(View view) {
+        Toast.makeText(this, "New Game", Toast.LENGTH_SHORT).show();
+    }
+
 }
